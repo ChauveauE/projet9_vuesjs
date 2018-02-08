@@ -1,20 +1,14 @@
 <template>
-  <div>
-    <ul>
-      <li v-for="todo in todos" :key="todo.id">
-        {{ todo.label }}
-      </li>
-    </ul>
-  </div>
+    <h2> Il y a {{count}} taches </h2>
 </template>
 
 <script>
 
 export default {
-  name: `Todos`,
+  name: `LpHeader`,
   computed: {
-    todos() {
-      return this.$store.getters.todos;
+    count() {
+      return this.$store.getters.count;
     },
   },
 };

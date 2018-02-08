@@ -1,13 +1,21 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
+    <lp-header/>
     <router-view/>
   </div>
 </template>
 
 <script>
+import lpHeader from '@/components/LpHeader';
 export default {
   name: `App`,
+  created() {
+    this.$store.dispatch(`getTodos`);
+  },
+  components: {
+    lpHeader,
+  },
 };
 </script>
 
