@@ -8,6 +8,7 @@
 
 <script>
 import lpHeader from '@/components/LpHeader';
+
 export default {
   name: `App`,
   created() {
