@@ -8,6 +8,7 @@
 
 <script>
 import lpHeader from '@/components/LpHeader';
+// import deleteTodos from '@/components/DeleteTodos';
 
 export default {
   name: `App`,
@@ -16,6 +17,8 @@ export default {
   },
   components: {
     lpHeader,
+    /*
+    deleteTodos, */
   },
 };
 </script>

@@ -2,8 +2,7 @@
   <div>
     <ul>
       <li v-for="todo in todos" :key="todo.id">
-        {{ todo.label }}
-        <button> X </button>
+        {{ x }}
       </li>
     </ul>
   </div>
@@ -12,10 +11,10 @@
 <script>
 
 export default {
-  name: `Todos`,
+  name: `DeleteTodos`,
   computed: {
-    todos() {
-      return this.$store.getters.todos;
+    delete() {
+      return this.$store.getters.count;
     },
   },
 };

@@ -15,6 +15,10 @@ export default new Vuex.Store({
     todos(state) {
       return state.todos;
     },
+    /*
+    delete(state) {
+      return state.todos.id;
+    }, */
   },
   mutations: {
     POPULATE_TODOS(state, todos) {
